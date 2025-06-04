@@ -19,10 +19,11 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-/* Caixa de imagens */
+/* Caixa de imagens usando FLEX */
 .caixa-imagens {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     width: 90%;
     max-width: 800px;
@@ -31,9 +32,9 @@ h1 {
 
 /* Estilo das imagens */
 .caixa-imagens img {
-    width: 100%;
-    max-width: 220px;
-    height: 180px;
+    width: 30%;
+    max-width: 200px;
+    height: auto;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -55,7 +56,7 @@ h1 {
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
-    min-height: 100vh; /* ⬅️ Ocupa toda a altura da tela */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,13 +71,9 @@ h1 {
 
 /* Responsivo para celular */
 @media (max-width: 600px) {
-    .caixa-imagens {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .caixa-imagens img {
+        width: 45%;
         max-width: 150px;
-        height: 120px;
     }
 
     h1 {
