@@ -1,8 +1,8 @@
-/* Imagens aumentadas em 20% */
+/* Imagens menores (reduzindo 20% do último tamanho) */
 .caixa-imagens img {
-    width: 72%;           /* 60% * 1.2 = 72% */
-    max-width: 384px;     /* 320px * 1.2 = 384px */
-    height: 312px;        /* 260px * 1.2 = 312px */
+    width: 57.6%;           /* 72% * 0.8 = 57.6% */
+    max-width: 307.2px;     /* 384px * 0.8 = 307.2px */
+    height: 249.6px;        /* 312px * 0.8 = 249.6px */
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -12,45 +12,47 @@
 /* Responsivo para celular */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 96%;         /* 80% * 1.2 = 96% */
-        max-width: 312px;   /* 260px * 1.2 = 312px */
-        height: 240px;      /* 200px * 1.2 = 240px */
+        width: 76.8%;         /* 96% * 0.8 = 76.8% */
+        max-width: 249.6px;   /* 312px * 0.8 = 249.6px */
+        height: 192px;        /* 240px * 0.8 = 192px */
     }
 
     h1 {
         font-size: 26px;
     }
 
-    /* Caixa da mensagem 50% menor */
+    /* Caixa da mensagem menor (reduzindo 20%) */
     .mensagem {
-        width: 12.5%;       /* 25% / 2 = 12.5% */
-        max-width: 125px;   /* 250px / 2 = 125px */
-        padding: 15px 10px;
+        width: 10%;           /* 12.5% * 0.8 = 10% */
+        max-width: 100px;     /* 125px * 0.8 = 100px */
+        padding: 12px 8px;
     }
 
-    /* Texto da mensagem mantido grande */
+    /* Texto da mensagem com espaçamento reduzido */
     .mensagem h3 {
         font-size: 50px;
         line-height: 1.4;
+        letter-spacing: -0.05em;  /* diminui espaçamento entre letras */
     }
 }
 
-/* Caixa da mensagem 50% menor */
+/* Caixa da mensagem menor (reduzindo 20%) */
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
-    padding: 15px 10px;
-    width: 12.5%;          /* metade de 25% */
-    max-width: 125px;      /* metade de 250px */
+    padding: 12px 8px;
+    width: 10%;              /* de 12.5% para 10% */
+    max-width: 100px;        /* de 125px para 100px */
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
 }
 
-/* Texto da mensagem grande */
+/* Texto da mensagem com espaçamento reduzido */
 .mensagem h3 {
     margin: 0;
     line-height: 2;
     font-weight: normal;
     font-size: 50px;
+    letter-spacing: -0.05em;  /* diminui espaçamento entre letras */
 }
