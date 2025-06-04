@@ -1,58 +1,86 @@
-/* Imagens menores (reduzindo 20% do último tamanho) */
+/* Fundo do site */
+body {
+    background: url('fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Container das imagens */
+.caixa-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Estilo das imagens */
 .caixa-imagens img {
-    width: 57.6%;           /* 72% * 0.8 = 57.6% */
-    max-width: 307.2px;     /* 384px * 0.8 = 307.2px */
-    height: 249.6px;        /* 312px * 0.8 = 249.6px */
+    width: 30%;
+    max-width: 160px;
+    height: 130px;
     border-radius: 15px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
 }
 
-/* Responsivo para celular */
+.caixa-imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Caixa da mensagem */
+.mensagem {
+    background-color: rgba(255, 230, 240, 0.9);
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 50%;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: #333;
+}
+
+/* Texto da mensagem */
+.mensagem h3 {
+    margin: 0;
+    line-height: 2;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* Responsivo - Mobile */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 76.8%;         /* 96% * 0.8 = 76.8% */
-        max-width: 249.6px;   /* 312px * 0.8 = 249.6px */
-        height: 192px;        /* 240px * 0.8 = 192px */
+        width: 40%;
+        max-width: 130px;
+        height: 100px;
     }
 
     h1 {
         font-size: 26px;
     }
 
-    /* Caixa da mensagem menor (reduzindo 20%) */
     .mensagem {
-        width: 10%;           /* 12.5% * 0.8 = 10% */
-        max-width: 100px;     /* 125px * 0.8 = 100px */
-        padding: 12px 8px;
+        width: 80%;
+        padding: 20px 15px;
     }
 
-    /* Texto da mensagem com espaçamento reduzido */
     .mensagem h3 {
-        font-size: 50px;
-        line-height: 1.4;
-        letter-spacing: -0.05em;  /* diminui espaçamento entre letras */
+        font-size: 18px;
+        line-height: 1.8;
     }
-}
-
-/* Caixa da mensagem menor (reduzindo 20%) */
-.mensagem {
-    background-color: rgba(255, 230, 240, 0.9);
-    border-radius: 20px;
-    padding: 12px 8px;
-    width: 10%;              /* de 12.5% para 10% */
-    max-width: 100px;        /* de 125px para 100px */
-    margin: 30px auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-    color: #333;
-}
-
-/* Texto da mensagem com espaçamento reduzido */
-.mensagem h3 {
-    margin: 0;
-    line-height: 2;
-    font-weight: normal;
-    font-size: 50px;
-    letter-spacing: -0.05em;  /* diminui espaçamento entre letras */
 }
