@@ -59,7 +59,7 @@ h1 {
     margin: 0;
     line-height: 2;
     font-weight: normal;
-    font-size: 95px;
+    font-size: 75px;
 }
 
 /* Responsivo - Mobile */
@@ -80,7 +80,7 @@ h1 {
     }
 
     .mensagem h3 {
-        font-size: 18px;
+        font-size: 25px;
         line-height: 1.8;
     }
 }
