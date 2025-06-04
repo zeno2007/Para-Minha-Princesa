@@ -26,30 +26,28 @@ h1 {
     margin: 20px auto;
 }
 
-.caixa-imagens img {
+.caixa-imagens {
     width: 100%;
-    max-width: 220px; /* Limita o tamanho máximo no PC */
-    height: auto;     /* Altura automática proporcional */
+    height: 180px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s;
 }
 
-.caixa-imagens img:hover {
+.caixa-imagens hover {
     transform: scale(1.05);
 }
 
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
-    padding: 40px 20px; /* Aumentei o padding vertical */
+    padding: 20px;
     width: 60%;
     max-width: 800px;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
-    min-height: 450px; /* Faz ela ficar mais comprida */
 }
 
 .mensagem h3 {
@@ -72,7 +70,6 @@ h1 {
     }
 
     .mensagem {
-        padding: 30px 15px;
-        min-height: 400px;
+        padding: 15px;
     }
 }
