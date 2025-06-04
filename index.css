@@ -23,7 +23,7 @@ h1 {
     justify-content: center;
     gap: 10px;
     width: 90%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 20px auto;
 }
 
@@ -59,7 +59,7 @@ h1 {
     margin: 0;
     line-height: 2;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 /* Responsivo - Mobile */
