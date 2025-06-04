@@ -1,6 +1,7 @@
 body {
-    background-image: url('./fundo.jpg');
+    background-image: url('valentines_day/imagens/fundo.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
@@ -16,32 +17,65 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-body {
-    background-image: url('valentines_day/imagens/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    font-family: Arial, sans-serif;
+/* Caixa de cada grupo de imagens */
+.caixa-imagens {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-.caixa {
+/* Imagens dentro de cada grupo */
+.caixa-imagens img {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.caixa-imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Caixa da mensagem */
+.mensagem {
     background-color: #ffe6f0; /* Rosa bebê */
     border-radius: 20px;
     padding: 20px;
-    width: 600px;
+    width: 90%;
+    max-width: 800px;
     margin: 30px auto;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #333;
 }
 
-.caixa img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-}
 .mensagem h3 {
     margin: 0;
     line-height: 1.6;
     font-weight: normal;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .caixa-imagens {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .caixa-imagens img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mensagem {
+        padding: 15px;
+    }
 }
