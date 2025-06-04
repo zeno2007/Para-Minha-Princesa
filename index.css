@@ -1,4 +1,4 @@
-/* Fundo do site */
+/* Fundo do site (imagem na mesma pasta do HTML e CSS) */
 body {
     background: url('fundo.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -11,27 +11,27 @@ body {
 /* Título */
 h1 {
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 36px;
     color: white;
     text-shadow: 2px 2px 5px #000;
 }
 
-/* Caixa de imagens */
+/* Caixa das imagens */
 .caixa-imagens {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
 }
 
-/* Imagens */
+/* Estilo das imagens */
 .caixa-imagens img {
-    width: 30%;
-    max-width: 200px;
-    height: 150px;
+    width: 25%;
+    max-width: 120px;
+    height: 100px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -43,7 +43,7 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Caixa da mensagem ocupa o fundo todo */
+/* Caixa da mensagem */
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
@@ -66,16 +66,16 @@ h1 {
     font-weight: normal;
 }
 
-/* Responsividade para celular */
+/* Responsivo para celular */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 45%;
-        max-width: 150px;
-        height: 100px;
+        width: 40%;
+        max-width: 100px;
+        height: 80px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .mensagem {
