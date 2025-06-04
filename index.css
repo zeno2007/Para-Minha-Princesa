@@ -17,7 +17,7 @@ h1 {
 }
 
 .caixa-imagens {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 230, 240, 0.95); /* rosa bebê */
     border-radius: 20px;
     padding: 20px;
     margin: 30px auto;
@@ -41,7 +41,7 @@ h1 {
 }
 
 .mensagem {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 230, 240, 0.95); /* rosa bebê */
     border-radius: 20px;
     padding: 30px;
     margin: 50px auto;
@@ -49,7 +49,6 @@ h1 {
     color: #333;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
-
 .mensagem h3 {
     margin: 0;
     line-height: 1.6;
