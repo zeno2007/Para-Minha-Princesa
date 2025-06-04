@@ -1,36 +1,37 @@
-/* Imagens muito maiores */
+/* Imagens MUITO maiores, porém respeitando limites */
 .caixa-imagens img {
-    width: 70%;          /* grande demais */
-    max-width: 350px;    /* muito maior */
-    height: 280px;       /* proporcionalmente maior */
+    width: 100%;            /* máximo possível */
+    max-width: 1110px;      /* grande, mas não absurda */
+    height: 880px;          /* proporcional */
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s;
 }
 
-/* Responsivo para celular - imagens muito maiores também */
+/* Responsivo para celular */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 90%;       /* quase a largura total */
-        max-width: 320px;
-        height: 260px;
+        width: 100%;
+        max-width: 800px;
+        height: 640px;
     }
 
     h1 {
         font-size: 26px;
     }
 
-    /* Caixa da mensagem extremamente pequena */
+    /* Caixa da mensagem MUITO pequena, mas visível */
     .mensagem {
-        width: 12%;       /* muito pequena */
-        padding: 8px 6px;
+        width: 5%;
+        max-width: 50px;
+        padding: 5px 4px;
     }
 
-    /* Texto da mensagem muito maior */
+    /* Texto da mensagem MUITO grande, mas legível */
     .mensagem h3 {
-        font-size: 40px;  /* bem grande */
-        line-height: 1.4;
+        font-size: 120px;
+        line-height: 1.2;
     }
 }
 
@@ -39,8 +40,8 @@
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
     padding: 10px 8px;
-    width: 12%;           /* muito estreita */
-    max-width: 180px;     /* bem reduzido */
+    width: 5%;
+    max-width: 50px;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
@@ -51,5 +52,5 @@
     margin: 0;
     line-height: 2;
     font-weight: normal;
-    font-size: 40px;       /* muito grande */
+    font-size: 120px;
 }
