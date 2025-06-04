@@ -5,7 +5,6 @@ body {
     background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
     text-align: center;
 }
 
@@ -16,20 +15,20 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-div {
+.caixa {
     background-color: #ffe6f0; /* Rosa bebê */
     border-radius: 20px;
     padding: 20px;
-    width: 150px;
+    width: 600px;
     margin: 30px auto;
     display: flex;
     justify-content: space-around;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-img {
-    width: 150px;
-    height: 150px;
+.caixa img {
+    width: 90px;
+    height: 90px;
     border-radius: 15px;
 }
 .mensagem h3 {
