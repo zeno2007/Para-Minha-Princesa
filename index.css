@@ -30,8 +30,8 @@ h1 {
 /* Estilo das imagens */
 .caixa-imagens img {
     width: 30%;
-    max-width: 160px;
-    height: 130px;
+    max-width: 90%;
+    height: auto;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
