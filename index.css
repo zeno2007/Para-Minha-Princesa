@@ -1,8 +1,8 @@
-/* Imagens MUITO maiores, porém respeitando limites */
+/* Imagens grandes, mas menores */
 .caixa-imagens img {
-    width: 100%;            /* máximo possível */
-    max-width: 1110px;      /* grande, mas não absurda */
-    height: 880px;          /* proporcional */
+    width: 60%;            /* menor que antes */
+    max-width: 666px;      /* 1110px * 0.6 */
+    height: 528px;         /* 880px * 0.6 */
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -12,9 +12,9 @@
 /* Responsivo para celular */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 100%;
-        max-width: 800px;
-        height: 640px;
+        width: 80%;          /* maior em celular */
+        max-width: 640px;    /* 800px * 0.8 */
+        height: 512px;       /* 640px * 0.8 */
     }
 
     h1 {
