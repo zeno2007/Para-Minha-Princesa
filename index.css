@@ -1,3 +1,4 @@
+/* Fundo do site */
 body {
     background-image: url('./valentines-day/imagens/fundo.jpg');
     background-size: cover;
@@ -10,6 +11,7 @@ body {
     text-align: center;
 }
 
+/* Título */
 h1 {
     margin-top: 50px;
     font-size: 40px;
@@ -17,17 +19,20 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
+/* Caixa de imagens */
 .caixa-imagens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 10px;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
 }
 
+/* Imagens */
 .caixa-imagens img {
     width: 100%;
+    max-width: 220px;
     height: 180px;
     border-radius: 15px;
     object-fit: cover;
@@ -35,4 +40,48 @@ h1 {
     transition: transform 0.3s;
 }
 
-.c
+/* Efeito hover nas imagens */
+.caixa-imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Caixa da mensagem */
+.mensagem {
+    background-color: rgba(255, 230, 240, 0.9);
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    color: #333;
+    min-height: 450px;
+}
+
+/* Texto da mensagem */
+.mensagem h3 {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    .caixa-imagens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caixa-imagens img {
+        max-width: 150px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mensagem {
+        padding: 30px 15px;
+        min-height: 400px;
+    }
+}
