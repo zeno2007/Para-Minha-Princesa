@@ -44,13 +44,12 @@ h1 {
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
-    padding: 40px 20px; /* ⬅️ Aumentei o padding vertical */
+    padding: 20px;
     width: 90%;
     max-width: 800px;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
-    min-height: 400px; /* ⬅️ Altura mínima maior */
 }
 
 .mensagem h3 {
