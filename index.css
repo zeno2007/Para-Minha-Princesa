@@ -1,5 +1,5 @@
 body {
-    background-image: url('fundo.jpg');
+    background-image: url('./valentines-day/imagens/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,6 @@ h1 {
 }
 
 .caixa-imagens {
-    background-color: rgba(255, 230, 240, 0.9);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
@@ -27,8 +26,7 @@ h1 {
     margin: 20px auto;
 }
 
-.caixa-imagens {
-    background-color: rgba(255, 230, 240, 0.9);
+.caixa-imagens img {
     width: 100%;
     height: 180px;
     border-radius: 15px;
@@ -72,6 +70,6 @@ h1 {
     }
 
     .mensagem {
-        padding: 15px;
-    }
+        padding: 15px;
+    }
 }
