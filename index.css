@@ -1,6 +1,6 @@
 /* Fundo do site */
 body {
-    background: url('./valentines-day/imagens/fundo.jpg') no-repeat center center fixed;
+    background: url('fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
