@@ -16,38 +16,29 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-.caixa-imagens {
-    background-color: rgba(255, 230, 240, 0.95); /* rosa bebê */
+body {
+    background-image: url('valentines_day/imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.caixa {
+    background-color: #ffe6f0; /* Rosa bebê */
     border-radius: 20px;
     padding: 20px;
+    width: 600px;
     margin: 30px auto;
-    width: fit-content;
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.caixa-imagens img {
-    height: 150px;
+.caixa img {
     width: 150px;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-.caixa-imagens img:hover {
-    transform: scale(1.05);
-}
-
-.mensagem {
-    background-color: rgba(255, 230, 240, 0.95); /* rosa bebê */
-    border-radius: 20px;
-    padding: 30px;
-    margin: 50px auto;
-    width: 60%;
-    color: #333;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    height: 150px;
+    border-radius: 15px;
 }
 .mensagem h3 {
     margin: 0;
