@@ -1,5 +1,5 @@
 body {
-    background-image: url('fundo.jpg');
+    background-image: url('./valentines-day/imagens/fundo.jpg'); /* Sua imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,11 +17,11 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-/* Estilo dos grupos de imagens */
+/* Grupos de imagens */
 .caixa-imagens {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+    gap: 8px; /* 🔥 Menor espaço entre as imagens */
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
@@ -33,7 +33,7 @@ h1 {
     height: 180px;
     border-radius: 15px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s;
 }
 
@@ -43,13 +43,13 @@ h1 {
 
 /* Caixa da mensagem */
 .mensagem {
-    background-color: #ffe6f0;
+    background-color: rgba(255, 230, 240, 0.9); /* Levemente transparente pra aparecer o fundo */
     border-radius: 20px;
     padding: 20px;
     width: 90%;
     max-width: 800px;
     margin: 30px auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
 }
 
@@ -59,7 +59,7 @@ h1 {
     font-weight: normal;
 }
 
-/* Responsivo para telas menores */
+/* Responsivo para celulares */
 @media (max-width: 600px) {
     .caixa-imagens {
         grid-template-columns: repeat(2, 1fr); /* 2 por linha no celular */
