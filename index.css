@@ -11,7 +11,7 @@ body {
 /* Título principal */
 h1 {
     margin-top: 50px;
-    font-size: 90px;
+    font-size: 55px;
     color: white;
     text-shadow: 2px 2px 5px #000;
 }
@@ -59,7 +59,7 @@ h1 {
     margin: 0;
     line-height: 2;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* Responsivo - Mobile */
@@ -80,7 +80,7 @@ h1 {
     }
 
     .mensagem h3 {
-        font-size: 25px;
+        font-size: 18px;
         line-height: 1.8;
     }
 }
