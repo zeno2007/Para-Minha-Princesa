@@ -16,7 +16,7 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-.caixa {
+div {
     background-color: #ffe6f0; /* Rosa bebê */
     border-radius: 20px;
     padding: 20px;
@@ -27,7 +27,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.caixa img {
+img {
     width: 150px;
     height: 150px;
     border-radius: 15px;
