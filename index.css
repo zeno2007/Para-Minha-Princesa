@@ -1,7 +1,10 @@
-/* Fundo do site (imagem na mesma pasta do HTML e CSS) */
+/* Fundo do site */
 body {
-    background: url('fundo.jpg') no-repeat center center fixed;
+    background-image: url('./valentines-day/imagens/fundo.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fff;
@@ -11,34 +14,33 @@ body {
 /* Título */
 h1 {
     margin-top: 50px;
-    font-size: 36px;
+    font-size: 40px;
     color: white;
     text-shadow: 2px 2px 5px #000;
 }
 
-/* Caixa das imagens */
+/* Caixa de imagens */
 .caixa-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
 }
 
-/* Estilo das imagens */
+/* Imagens */
 .caixa-imagens img {
-    width: 25%;
-    max-width: 120px;
-    height: 100px;
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s;
 }
 
-/* Efeito ao passar o mouse */
+/* Efeito hover nas imagens */
 .caixa-imagens img:hover {
     transform: scale(1.05);
 }
@@ -53,33 +55,33 @@ h1 {
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 450px;
 }
 
 /* Texto da mensagem */
 .mensagem h3 {
     margin: 0;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: normal;
 }
 
 /* Responsivo para celular */
 @media (max-width: 600px) {
+    .caixa-imagens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .caixa-imagens img {
-        width: 40%;
-        max-width: 100px;
-        height: 80px;
+        max-width: 150px;
+        height: 120px;
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .mensagem {
         padding: 30px 15px;
-        min-height: 100vh;
+        min-height: 400px;
     }
 }
