@@ -1,4 +1,4 @@
-/* Fundo do site (imagem na mesma pasta do HTML e CSS) */
+/* Fundo do site */
 body {
     background: url('fundo.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -21,7 +21,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
@@ -29,9 +29,9 @@ h1 {
 
 /* Estilo das imagens */
 .caixa-imagens img {
-    width: 25%;
-    max-width: 120px;
-    height: 100px;
+    width: 30%;
+    max-width: 160px;
+    height: 130px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -43,35 +43,32 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Caixa da mensagem */
+/* Caixa da mensagem menor */
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
-    padding: 40px 20px;
-    width: 90%;
-    max-width: 800px;
+    padding: 30px 20px;
+    width: 50%;
+    max-width: 500px;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Texto da mensagem */
+/* Texto da mensagem maior e com mais espaçamento */
 .mensagem h3 {
     margin: 0;
-    line-height: 1.8;
+    line-height: 2;
     font-weight: normal;
+    font-size: 20px;
 }
 
 /* Responsivo para celular */
 @media (max-width: 600px) {
     .caixa-imagens img {
         width: 40%;
-        max-width: 100px;
-        height: 80px;
+        max-width: 130px;
+        height: 100px;
     }
 
     h1 {
@@ -79,7 +76,12 @@ h1 {
     }
 
     .mensagem {
-        padding: 30px 15px;
-        min-height: 100vh;
+        width: 80%;
+        padding: 20px 15px;
+    }
+
+    .mensagem h3 {
+        font-size: 18px;
+        line-height: 1.8;
     }
 }
