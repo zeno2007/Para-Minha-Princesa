@@ -16,14 +16,6 @@ h1 {
     text-shadow: 2px 2px 5px #000;
 }
 
-body {
-    background-image: url('valentines_day/imagens/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .caixa {
     background-color: #ffe6f0; /* Rosa bebê */
     border-radius: 20px;
