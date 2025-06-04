@@ -1,46 +1,46 @@
-/* Imagens maiores */
+/* Imagens muito maiores */
 .caixa-imagens img {
-    width: 50%;          /* maior que antes */
-    max-width: 260px;    /* maior que antes */
-    height: 200px;       /* maior que antes */
+    width: 70%;          /* grande demais */
+    max-width: 350px;    /* muito maior */
+    height: 280px;       /* proporcionalmente maior */
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s;
 }
 
-/* Responsivo para celular - imagens maiores também */
+/* Responsivo para celular - imagens muito maiores também */
 @media (max-width: 600px) {
     .caixa-imagens img {
-        width: 80%;       /* ainda maior para telas pequenas */
-        max-width: 220px;
-        height: 170px;
+        width: 90%;       /* quase a largura total */
+        max-width: 320px;
+        height: 260px;
     }
 
     h1 {
         font-size: 26px;
     }
 
-    /* Caixa da mensagem muito menor */
+    /* Caixa da mensagem extremamente pequena */
     .mensagem {
-        width: 20%;       /* bem menor que antes */
-        padding: 10px 8px;
+        width: 12%;       /* muito pequena */
+        padding: 8px 6px;
     }
 
     /* Texto da mensagem muito maior */
     .mensagem h3 {
-        font-size: 34px;  /* muito maior */
-        line-height: 1.6;
+        font-size: 40px;  /* bem grande */
+        line-height: 1.4;
     }
 }
 
-/* Caixa da mensagem bem menor */
+/* Caixa da mensagem muito pequena */
 .mensagem {
     background-color: rgba(255, 230, 240, 0.9);
     border-radius: 20px;
-    padding: 15px 10px;
-    width: 20%;           /* bastante reduzido */
-    max-width: 220px;     /* reduzido */
+    padding: 10px 8px;
+    width: 12%;           /* muito estreita */
+    max-width: 180px;     /* bem reduzido */
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     color: #333;
@@ -51,5 +51,5 @@
     margin: 0;
     line-height: 2;
     font-weight: normal;
-    font-size: 34px;       /* bem grande */
+    font-size: 40px;       /* muito grande */
 }
